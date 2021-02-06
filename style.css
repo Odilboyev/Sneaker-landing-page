@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(119.36deg, #6c559dbe 10.4%, #3b2063b9 87.5%), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    overflow: hidden;
+}
+.container ul {
+    display: flex;
+    list-style-type: none;
+    z-index: 999;
+}
+.container ul li{
+    margin: 0 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+} 
+.container .titles{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.container .titles .air{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #00000000;
+    -webkit-text-stroke-width: 1px ;
+    -webkit-text-stroke-color: #fff;
+    text-align: left;
+    transform: translate(10%, 50%);
+}
+.container .titles div{
+    display: flex;
+}
+.container .titles div p{
+    font-size: 200px;
+    text-transform: uppercase;
+}
+.container .titles div span{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #00000000;
+    -webkit-text-stroke-width: 1px ;
+    -webkit-text-stroke-color: #fff;
+    margin-top: 20px;
+}
+.container .titles .max{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #00000000;
+    -webkit-text-stroke-width: 1px ;
+    -webkit-text-stroke-color: #fff;
+    transform: translate(15%,-50%);
+}
+.container .titles img{
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 700px;
+    filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.4));
+    animation: up-down 1s ease-in-out infinite alternate-reverse both
+}
+@keyframes up-down{
+    0% {
+        transform: translateY(10px);
+      }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.container .titles button{
+    color: #000;
+    padding: 1.0rem 4rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin: auto;
+    transition: 0.3s;
+    z-index: 999;
+    position: fixed;
+    transform: translateX(-70%);
+}
+.container .titles button:hover{
+    color: #fff;
+    background: #000;
+}
